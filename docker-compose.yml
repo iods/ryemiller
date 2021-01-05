@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  development:
+    container_name: development
+    build:
+      context: .
+      dockerfile: build/dev/Dockerfile
+    ports:
+      - '8150:8150'
