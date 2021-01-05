@@ -1,0 +1,6 @@
+/.git/
+/.idea/
+.dockerignore
+.gitignore
+docker-compose.yml
+Makefile
