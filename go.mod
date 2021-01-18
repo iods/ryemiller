@@ -1,1 +1,3 @@
-module "github.com/iods/ryemiller.io"
+module github.com/iods/ryemiller.io
+
+go 1.15
