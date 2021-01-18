@@ -7,4 +7,4 @@ services:
       context: .
       dockerfile: build/dev/Dockerfile
     ports:
-      - '8150:8150'
+      - '8150:8080'
