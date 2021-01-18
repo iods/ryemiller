@@ -1,0 +1,6 @@
+runtime: go115
+
+env_variables:
+  TEST_VAR: "deployed"
+
+main: ./cmd/ryemillerio
