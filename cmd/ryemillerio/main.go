@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/iods/ryemiller.io/pkg/web"
+	"github.com/iods/ryemiller.io/internal/server"
 )
 
 func main() {
-	web.ServerInit()
+	server.Run()
 }

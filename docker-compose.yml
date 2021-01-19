@@ -1,10 +1,22 @@
 version: '3'
 
 services:
+
   development:
-    container_name: development
+
+    # Container Information
     build:
       context: .
       dockerfile: build/dev/Dockerfile
+    container_name: development
+
+    # Environment Management
+
+    # Network Information
     ports:
-      - '8150:8150'
+      - '8150:8080'
+
+    # Storage Management
+
+    # Orchestration Configurations
+    restart: on-failure

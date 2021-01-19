@@ -1,10 +1,14 @@
 
-all: clean build
+all: destroy build up
 
-clean:
-	@docker-compose down
 
-build: clean
+up:
 	@docker-compose up -d
 
-.PHONY: all clean build
+
+build:
+	@docker-compose build --no-cache --force-rm
+
+
+destroy:
+	@docker-compose down --rmi all --volumes --remove-orphans

@@ -8,7 +8,7 @@ LABEL \
     version="0.0"
 
 # Set Environment Vars
-ENV PORT=8150
+ENV PORT=8080
 
 WORKDIR /app
 # COPY go.mod .
