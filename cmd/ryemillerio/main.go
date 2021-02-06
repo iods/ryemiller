@@ -9,10 +9,10 @@ import (
 func main() {
 
 	r := fiber.New()
-	r.Static("../../web", "dist")
+	r.Static("/", "../../web/app/dist")
 
 	r.Get("/", func(ctx *fiber.Ctx) error {
-		return ctx.SendFile("../../web/dist/index.html")
+		return ctx.SendFile("../../web/app/dist/index.html")
 	})
 
 	r.Get("/curriculum-vitae", func(ctx *fiber.Ctx) error {
