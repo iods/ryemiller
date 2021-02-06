@@ -23,5 +23,5 @@ func main() {
 		return ctx.SendString("Site Reliability Dashboard.")
 	})
 
-	log.Fatal(r.Listen(":3000"))
+	log.Fatal(r.Listen(":8080"))
 }
