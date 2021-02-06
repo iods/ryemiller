@@ -9,7 +9,7 @@ import (
 	"github.com/julienschmidt/httprouter"
 )
 
-func Run() {
+func Runs() {
 	r := httprouter.New()
 	r.GET("/", handler.Index)
 	r.GET("/contact", handler.Contact)
