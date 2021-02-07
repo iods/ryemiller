@@ -17,6 +17,9 @@ p {
     @apply mx-auto px-5;
 }
 
+.sticky {
+    @apply fixed bg-white shadow;
+}
 
 .collapse.show {
     @apply block;
