@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat&display=swap');
+
+/* font-family: 'Fira Code', monospace; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    @apply text-gray-600;
+}
+
+.container {
+    @apply mx-auto px-5;
+}
+
+
+.collapse.show {
+    @apply block;
+}
+
+.toggler-icon {
+    @apply block relative bg-black;
+    height: 3px;
+    width: 30px;
+    margin: 6px 0;
+}
+
+
+.page-scroll {
+    @apply block px-5 text-gray-800;
+}
+
+.page-scroll:active,
+.page-scroll:hover {
+    @apply text-gray-900;
+}
+
+.iods {
+    font-family: 'Fira Code', monospace;
+}
