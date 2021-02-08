@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center mt-12">
+      <div class="flex items-center justify-center mt-12 pb-16">
         <a class="flex items-center text-black hover:underline hover:text-gray-800" href="https://github.com/iods?tab=repositories" target="_blank">
           <span>View More On Github</span>
           <svg class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,19 +56,19 @@
 
   </section>
 
-  <section class="container -mt-16">
+  <section class="container -mt-28">
     <div class="flex flex-col md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
-      <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-700">
+      <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-400">
         <div class="py-6 px-8 md:py-0">
-          <h2 class="text-gray-700 text-xl md:text-gray-100 iods">Interested in collaborating?</h2>
-          <p class="mt-2 text-gray-600 md:text-gray-400">I am always open to discussing development opportunities and just code in general. I love to work with people who are passionate about what they do and are passionate about their business' success.</p>
+          <h2 class="text-gray-700 text-2xl md:text-white iods">Interested in collaborating?</h2>
+          <p class="mt-2 text-gray-600 md:text-gray-900">I am always open to discussing development opportunities and just code in general. I love to work with people who are passionate about what they do and are passionate about their business' success.</p>
         </div>
       </div>
-      <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 md:border-b-8 border-gray-700">
+      <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
         <form>
-          <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
-            <input class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="email" placeholder="Enter your email">
-            <button class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600">Start a conversation</button>
+          <div class="flex flex-col rounded overflow-hidden sm:flex-row">
+            <input class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" type="text" name="email" placeholder="Start a conversation...">
+            <button class="py-3 px-4 bg-gray-800 iods text-gray-100 hover:bg-gray-400">Let's Chat!</button>
           </div>
         </form>
       </div>
@@ -81,7 +81,7 @@
       <span class="text-sm text-center">People I have had the chance to work with have said some nice things...</span>
     </div>
     <div class="mx-10 pt-15">
-      <div class="grid gap-6 mb-8 md:grid-cols-2">
+      <div class="grid gap-6 mb-4 md:grid-cols-2">
         <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
           <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 600px">
             <div class="w-full pt-1 pb-5">
@@ -114,14 +114,14 @@
             </div>
             <div class="w-full">
               <p class="text-md iods text-center">Scott Windon</p>
-              <p class="text-xs iods text-center">@scott.windon</p>
+              <p class="text-xs iods text-center">CEO of Red Bull</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
+  </section>
   <!--
     PROJECTS
   -->
