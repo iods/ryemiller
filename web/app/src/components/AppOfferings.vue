@@ -9,7 +9,7 @@
       <div class="flex flex-wrap justify-center md:justify-start lg:px-24">
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-50">
+          <div class="pricing-box bg-gray-50 border-t-8 border-gray-400">
             <div class="mb-3">
               <h3 class="package-name">Basic</h3>
             </div>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-100">
+          <div class="pricing-box bg-gray-100 border-t-8 border-gray-600">
             <div class="mb-3">
               <h3 class="package-name">Standard</h3>
             </div>
@@ -50,7 +50,7 @@
         </div>
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-50">
+          <div class="pricing-box bg-gray-50 border-t-8 border-gray-800">
             <div class="mb-3">
               <h3 class="package-name">Premium</h3>
             </div>
