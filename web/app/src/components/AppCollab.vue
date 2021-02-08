@@ -5,8 +5,8 @@
   <div class="bg-white-100">
 
     <section class="container">
-      <div class="px-12 pt-20 text-center">
-        <div class="max-w-2xl mx-auto mb-8">
+      <div class="px-12 pt-20 mb-20 text-center">
+        <div class="max-w-5xl mx-auto mb-12">
           <h2 class="text-3xl leading-tight mb-6 font-heading iods">I am proud to have worked with some fantastic companies:</h2>
         </div>
         <div class="flex flex-wrap -mx-8 items-center">
