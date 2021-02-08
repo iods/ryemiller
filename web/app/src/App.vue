@@ -1,14 +1,16 @@
 <template>
   <AppHeader />
   <AppHero />
-  <AppContacts />
+  <AppProfile />
+  <AppCollab />
   <AppFooter />
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader'
 import AppHero from '@/components/AppHero'
-import AppContacts from '@/components/AppContacts'
+import AppProfile from '@/components/AppProfile'
+import AppCollab from '@/components/AppCollab'
 import AppFooter from "@/components/AppFooter"
 
 export default {
@@ -16,7 +18,8 @@ export default {
   components: {
     AppHeader,
     AppHero,
-    AppContacts,
+    AppProfile,
+    AppCollab,
     AppFooter
   }
 }
