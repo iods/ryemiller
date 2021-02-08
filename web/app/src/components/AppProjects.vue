@@ -76,9 +76,9 @@
   </section>
 
   <section class="container pt-10">
-    <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Testimonials:</h2>
+    <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Endorsements:</h2>
     <div class="text-center pb-14">
-      <span class="text-sm text-center">People I have had the chance to work with have said some nice things...</span>
+      <span class="text-sm text-center">People I am grateful to have worked with have said some really nice things...</span>
     </div>
     <div class="mx-10 pt-15">
       <div class="grid gap-6 mb-4 md:grid-cols-2">
@@ -86,12 +86,12 @@
           <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 600px">
             <div class="w-full pt-1 pb-5">
               <div class="overflow-hidden rounded-full w-24 -mt-16 mx-auto shadow-lg">
-                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" class="opacity-50">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="" class="opacity-50">
               </div>
             </div>
             <div class="w-full mb-10">
               <div class="text-5xl text-gray-500 text-left leading-tight h-3">“</div>
-              <p class="text-sm text-gray-600 text-center px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.</p>
+              <p class="text-sm text-gray-600 text-center px-5">The amount of growth I have seen Rye go through is exponential. I have been working with Rye for over 33 years, and can honestly say he is the best developer and cutest around.</p>
               <div class="text-4xl text-gray-800 text-right leading-tight h-3 -mt-3">”</div>
             </div>
             <div class="w-full">
@@ -109,11 +109,11 @@
             </div>
             <div class="w-full mb-10">
               <div class="text-5xl text-gray-500 text-left leading-tight h-3">“</div>
-              <p class="text-sm text-gray-600 text-center px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.</p>
+              <p class="text-sm text-gray-600 text-center px-5">We never expected Rye to have wings or ride the bull like he did when he came to Red Bull. Whether it was our energy drink or his intelligence, that young man vitalizes the body and mind.</p>
               <div class="text-4xl text-gray-800 text-right leading-tight h-3 -mt-3">”</div>
             </div>
             <div class="w-full">
-              <p class="text-md iods text-center">Scott Windon</p>
+              <p class="text-md iods text-center">Creed Bratton</p>
               <p class="text-xs iods text-center">CEO of Red Bull</p>
             </div>
           </div>
