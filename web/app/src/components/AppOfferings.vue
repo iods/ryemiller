@@ -24,7 +24,7 @@
               <li class="text-gray-500 leading-9">Development</li>
               <li class="text-gray-500 leading-9">Cloud Services</li>
             </ul>
-            <a href="#" class="btn">Request A Quote</a>
+            <a href="#" class="btn">Quote</a>
           </div>
         </div>
 
@@ -45,7 +45,7 @@
               <li class="text-gray-500 leading-9">Cloud Services</li>
               <li class="text-gray-500 leading-9">Contract Support</li>
             </ul>
-            <a href="#" class="btn">Request A Quote</a>
+            <a href="#" class="btn">Quote</a>
           </div>
         </div>
 
@@ -67,7 +67,7 @@
               <li class="text-gray-500 leading-9">Jira Audit</li>
               <li class="text-gray-500 leading-9">Contract Support</li>
             </ul>
-            <a href="#" class="btn">Request A Quote</a>
+            <a href="#" class="btn">Quote</a>
           </div>
         </div>
 
