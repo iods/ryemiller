@@ -61,6 +61,7 @@ export default {
   mounted() {
     var header_navbar = document.querySelector(".navigation");
     var sticky = header_navbar.offsetTop;
+    var backToTop = document.querySelector(".back-to-top");
 
     window.onscroll = function () {
 
@@ -69,6 +70,13 @@ export default {
       } else {
         header_navbar.classList.remove("sticky");
       }
+
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        backToTop.style.display = "flex";
+      } else {
+        backToTop.style.display = "none";
+      }
+
     }
   }
 }
