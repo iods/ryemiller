@@ -2,7 +2,7 @@
   <!--
     PROFILE
   -->
-  <section class="container">
+  <section class="container" id="profile">
 
     <div class="py-12 lg:px-12 md:px-6">
       <div class="mx-auto">
