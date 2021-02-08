@@ -55,6 +55,73 @@
     </div>
 
   </section>
+
+  <section class="container -mt-16">
+    <div class="flex flex-col md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
+      <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-700">
+        <div class="py-6 px-8 md:py-0">
+          <h2 class="text-gray-700 text-xl md:text-gray-100 iods">Interested in collaborating?</h2>
+          <p class="mt-2 text-gray-600 md:text-gray-400">I am always open to discussing development opportunities and just code in general. I love to work with people who are passionate about what they do and are passionate about their business' success.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2 md:border-b-8 border-gray-700">
+        <form>
+          <div class="flex flex-col rounded-lg overflow-hidden sm:flex-row">
+            <input class="py-3 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="email" placeholder="Enter your email">
+            <button class="py-3 px-4 bg-gray-700 text-gray-100 font-semibold uppercase hover:bg-gray-600">Start a conversation</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="container pt-10">
+    <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Testimonials:</h2>
+    <div class="text-center pb-14">
+      <span class="text-sm text-center">People I have had the chance to work with have said some nice things...</span>
+    </div>
+    <div class="mx-10 pt-15">
+      <div class="grid gap-6 mb-8 md:grid-cols-2">
+        <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 600px">
+            <div class="w-full pt-1 pb-5">
+              <div class="overflow-hidden rounded-full w-24 -mt-16 mx-auto shadow-lg">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" class="opacity-50">
+              </div>
+            </div>
+            <div class="w-full mb-10">
+              <div class="text-5xl text-gray-500 text-left leading-tight h-3">“</div>
+              <p class="text-sm text-gray-600 text-center px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.</p>
+              <div class="text-4xl text-gray-800 text-right leading-tight h-3 -mt-3">”</div>
+            </div>
+            <div class="w-full">
+              <p class="text-md iods text-center">Rye's Mom</p>
+              <p class="text-xs iods text-center">@butteredtoast</p>
+            </div>
+          </div>
+        </div>
+        <div class="min-w-0 p-4 text-white rounded-lg shadow-xs">
+          <div class="w-full mx-auto rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800" style="max-width: 600px">
+            <div class="w-full pt-1 pb-5">
+              <div class="overflow-hidden rounded-full w-24 -mt-16 mx-auto shadow-lg">
+                <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="" class="opacity-50">
+              </div>
+            </div>
+            <div class="w-full mb-10">
+              <div class="text-5xl text-gray-500 text-left leading-tight h-3">“</div>
+              <p class="text-sm text-gray-600 text-center px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati laudantium recusandae, debitis eum voluptatem ad, illo voluptatibus temporibus odio provident.</p>
+              <div class="text-4xl text-gray-800 text-right leading-tight h-3 -mt-3">”</div>
+            </div>
+            <div class="w-full">
+              <p class="text-md iods text-center">Scott Windon</p>
+              <p class="text-xs iods text-center">@scott.windon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--
     PROJECTS
   -->
