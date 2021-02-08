@@ -30,6 +30,10 @@ p {
     @apply fixed bg-white shadow;
 }
 
+
+
+
+
 .collapse.show {
     @apply block;
 }
@@ -42,6 +46,24 @@ p {
 }
 
 
+.active > .toggler-icon:nth-child(1) {
+    @apply transform rotate-45;
+    top: 7px;
+}
+
+.active > .toggler-icon:nth-child(2) {
+    @apply opacity-0;
+}
+
+.active > .toggler-icon:nth-child(3) {
+    top: -8px;
+    transform: rotate(135deg);
+}
+
+
+
+
+
 .page-scroll {
     @apply block px-5 text-gray-800;
 }
@@ -49,7 +71,14 @@ p {
 .page-scroll:active,
 .page-scroll:hover {
     @apply text-gray-900;
+    font-weight: bold;
 }
+
+
+
+
+
+
 
 .iods {
     font-family: 'Fira Code', monospace;

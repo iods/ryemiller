@@ -2,7 +2,7 @@
   <!--
     PROJECTS
   -->
-  <section class="bg-gray-100 pattern py-14">
+  <section class="bg-gray-100 pattern py-14" id="projects">
 
     <div class="max-w-5xl px-6 mx-auto text-center">
       <h2 class="text-3xl leading-tight mb-6 font-heading iods">My projects and recent work:</h2>

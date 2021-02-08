@@ -28,6 +28,9 @@
                 <a class="page-scroll" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
+                <a class="page-scroll" href="#offerings">Offerings</a>
+              </li>
+              <li class="nav-item">
                 <a class="page-scroll" href="/curriculum-vitae">CV</a>
               </li>
               <li class="nav-item">
@@ -62,6 +65,9 @@ export default {
     var header_navbar = document.querySelector(".navigation");
     var sticky = header_navbar.offsetTop;
     var backToTop = document.querySelector(".back-to-top");
+    var pageLink = document.querySelectorAll('.page-scroll');
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+    let navbarToggler = document.querySelector(".navbar-toggler");
 
     window.onscroll = function () {
 
@@ -76,8 +82,50 @@ export default {
       } else {
         backToTop.style.display = "none";
       }
-
     }
+
+    pageLink.forEach(elem => {
+      elem.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {// eslint-disable-line no-unused-vars
+      var sections = document.querySelectorAll('.page-scroll');
+      var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+      for (var i = 0; i < sections.length; i++) {
+        var currLink = sections[i];
+        var val = currLink.getAttribute('href');
+        var refElement = document.querySelector(val);
+        var scrollTopMinus = scrollPos + 73;
+        if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+          document.querySelector('.page-scroll').classList.remove('active');
+          currLink.classList.add('active');
+        } else {
+          currLink.classList.remove('active');
+        }
+      }
+    }
+
+    window.document.addEventListener('scroll', onScroll);
+
+    document.querySelectorAll(".page-scroll").forEach(e =>
+      e.addEventListener("click", () =>{
+        navbarCollapse.classList.remove("show")
+        navbarToggler.classList.remove("active")
+      })
+    )
+
+    navbarToggler.addEventListener('click', function () {
+      navbarCollapse.classList.toggle("show");
+      navbarToggler.classList.toggle("active")
+    })
   }
 }
 </script>

@@ -2,7 +2,7 @@
   <!--
     OFFERINGS
   -->
-  <section id="pricing" class="py-14 bg-gray-100">
+  <section id="offerings" class="py-14 bg-gray-100">
 
     <div class="container">
       <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Here are my Offerings:</h2>
