@@ -1,14 +1,16 @@
 <template>
   <AppHeader />
   <AppHero />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppProfile />
+  <AppCollab />
   <AppFooter />
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader'
 import AppHero from '@/components/AppHero'
-import HelloWorld from './components/HelloWorld.vue'
+import AppProfile from '@/components/AppProfile'
+import AppCollab from '@/components/AppCollab'
 import AppFooter from "@/components/AppFooter"
 
 export default {
@@ -16,7 +18,8 @@ export default {
   components: {
     AppHeader,
     AppHero,
-    HelloWorld,
+    AppProfile,
+    AppCollab,
     AppFooter
   }
 }
@@ -26,7 +29,5 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  color: #2c3e50;
 }
 </style>

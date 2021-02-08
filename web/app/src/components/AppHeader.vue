@@ -1,39 +1,75 @@
 <template>
+  <!--
+    HEADER
+  -->
+  <header id="header-wrap" class="relative">
+    <!--
+      NAVBAR
+    -->
+    <div class="navigation fixed top-0 left-0 w-full duration-300 z-30">
 
-<!-- Header & Nav Template -->
-<header class="relative">
-
-  <div class="navigation fixed top-0 left-0 w-full bg-gray-100 z-30"><!-- NAV z-30 and duration-300 -->
-    <div class="container"><!-- mx-auto, p-5 "h-8 w-8 mr-2"-->
-
-      <nav class="flex items-center justify-between flex-wrap p-6">
-        <div class="flex items-center flex-no-shrink mr-6">
-          <img src="../assets/logo.svg" alt="logo" class="h-8 w-8 mr-2"/>
-          <span class="font-bold text-black text-2xl tracking-tight iods px-2">Rye Miller</span>
-        </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-gray-lighter border-black hover:text-gray hover:border-gray">
-            <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-1 flex justify-between items-center relative duration-300">
+          <a class="navbar-brand" href="/"><img src="../assets/img/logo.svg" alt="Logo" height="40" width="40"></a>
+          <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
           </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white mr-5">Home</a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white mr-5">Profile</a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white mr-5">Process</a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white mr-5">Projects</a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white mr-5">CV</a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-lighter hover:text-white">Site Health</a>
+          <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+              <li class="nav-item">
+                <a class="page-scroll active" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll" href="/curriculum-vitae">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll" href="/health">Site Health</a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <a href="#" class="inline-block text-sm leading-none hover:border-transparent hover:text-gray hover:bg-transparent mt-4 lg:mt-0">Get In Touch!</a>
+          <div class="header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
+            <a class="px-3 py-1" href="https://github.com/iods?tab=repositories" target="_blank">
+              <img src="../assets/img/github-square.svg" height="40" width="40">
+            </a>
           </div>
-        </div>
-      </nav>
-
+        </nav>
+      </div>
 
     </div>
-  </div>
-</header>
-
+    <!--
+      NAVBAR END
+    -->
+  </header>
+  <!--
+    HEADER END
+  -->
 </template>
+
+
+<script>
+export default {
+  name: 'header',
+
+  mounted() {
+    var header_navbar = document.querySelector(".navigation");
+    var sticky = header_navbar.offsetTop;
+
+    window.onscroll = function () {
+
+      if (window.pageYOffset > sticky) {
+        header_navbar.classList.add("sticky");
+      } else {
+        header_navbar.classList.remove("sticky");
+      }
+    }
+  }
+}
+</script>

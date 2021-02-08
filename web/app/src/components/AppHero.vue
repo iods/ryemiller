@@ -1,47 +1,23 @@
 <template>
+  <!--
+    HERO
+  -->
+  <section id="hero" class="bg-gray-100 pt-36 pb-10 text-center">
 
-  <div class="container">
-
-  </div>
-
-<div class="bg-blue-200 relative" style="height: 1500px; padding-top: 100px;">
-  <div class="bg-blue-200 flex flex-col bg-white m-auto p-auto container">
-    <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
-      <div class="flex flex-nowrap  ">
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
-        </div>
-        <div class="inline-block px-3">
-          <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"></div>
+    <div class="container">
+      <div class="w-full max-w-2xl mx-auto">
+        <span class="text-sm font-semibold iods">Rye Miller</span>
+        <h2 class="text-5xl mt-2 mb-6 leading-tight font-semibold font-heading">Software Developer</h2>
+        <p class="mb-8 text-gray-700 leading-relaxed">There will be a bunch of text here that I will add and put in here to make myself sound really cool and really important
+          I just do not know what to add here yet since I am building the site.</p>
+        <div>
+          <a class="inline-block hover:underline pb-8" href="#">View Some Projects »</a>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+  </section>
+  <!--
+    HERO END
+  -->
 </template>
-
-<style type="scoped">
-.hide-scroll-bar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.hide-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
-</style>
