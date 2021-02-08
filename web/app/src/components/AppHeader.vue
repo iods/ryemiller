@@ -3,7 +3,6 @@
     HEADER
   -->
   <header id="header-wrap" class="relative">
-
     <!--
       NAVBAR
     -->
@@ -20,22 +19,19 @@
           <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
               <li class="nav-item">
-                <a class="page-scroll active" href="#hero-area">Home</a>
+                <a class="page-scroll active" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#services">Profile</a>
+                <a class="page-scroll" href="#profile">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#feature">Process</a>
+                <a class="page-scroll" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#team">Projects</a>
+                <a class="page-scroll" href="/curriculum-vitae">CV</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#testimonial">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="page-scroll" href="#pricing">Site Health</a>
+                <a class="page-scroll" href="/health">Site Health</a>
               </li>
             </ul>
           </div>
@@ -51,7 +47,6 @@
     <!--
       NAVBAR END
     -->
-
   </header>
   <!--
     HEADER END
