@@ -5,7 +5,7 @@
   <section id="pricing" class="py-14 bg-gray-100">
 
     <div class="container">
-      <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Interested in working together? Here are my Offerings:</h2>
+      <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Here are my Offerings:</h2>
       <div class="flex flex-wrap justify-center md:justify-start lg:px-24">
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
