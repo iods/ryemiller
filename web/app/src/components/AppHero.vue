@@ -2,16 +2,17 @@
   <!--
     HERO
   -->
-  <section id="hero" class="bg-gray-100 pt-36 pb-10 text-center">
+  <section id="hero" class="bg-gray-100 pt-28 pb-10 text-center">
 
     <div class="container">
-      <div class="w-full max-w-2xl mx-auto">
-        <span class="text-sm font-semibold iods">Welcome, thanks for stopping by.</span>
-        <h2 class="text-5xl mt-2 mb-6 leading-tight font-semibold font-heading">I am <span id="companionMethods"></span></h2>
-        <p class="mb-8 text-gray-700 leading-relaxed">There will be a bunch of text here that I will add and put in here to make myself sound really cool and really important
-          I just do not know what to add here yet since I am building the site.</p>
+      <div class="w-full max-w-3xl mx-auto">
+        <span class="text-sm iods">Welcome, thanks for stopping by.</span>
+        <h2 class="text-5xl mt-4 mb-6 pt-10 leading-tight font-semibold font-heading">I am <span id="companionMethods"></span></h2>
+        <p class="mb-8 text-gray-700 leading-relaxed">I have a passion for bringing clarity and simplicity to software and the teams behind it. It begins with a healthy obsession for the
+          technologies and processes from a project's discovery to it's delivery, focusing on being agile not fragile. My goal is to move the web forward with each character
+          considered, each pixel defined, every pipeline a success.</p>
         <div>
-          <a class="inline-block hover:underline pb-8 page-scroll" href="#projects">View Some Projects »</a>
+          <a class="inline-block hover:underline pb-8 page-scroll" href="#projects">My vision is in the code »</a>
         </div>
       </div>
     </div>
