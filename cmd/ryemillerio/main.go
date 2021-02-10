@@ -16,11 +16,11 @@ func main() {
 	})
 
 	r.Get("/curriculum-vitae", func(ctx *fiber.Ctx) error {
-		return ctx.SendString("CV page.")
+		return ctx.SendString("CV page (not a part of the Vue app, Go page)")
 	})
 
 	r.Get("/health", func(ctx *fiber.Ctx) error {
-		return ctx.SendString("Site Reliability Dashboard.")
+		return ctx.SendString("Site Reliability Dashboard (not a part of the Vue app, Go page)")
 	})
 
 	log.Fatal(r.Listen(":8080"))
