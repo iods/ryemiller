@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "emailjs-com": "^2.6.4",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
     "typeit": "^7.0.4",

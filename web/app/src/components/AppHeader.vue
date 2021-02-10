@@ -34,7 +34,7 @@
                 <a class="page-scroll" href="/curriculum-vitae">CV</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="/health">Site Health</a>
+                <a href="/health" target="_blank">Site Health</a>
               </li>
             </ul>
           </div>

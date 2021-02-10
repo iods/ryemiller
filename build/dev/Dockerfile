@@ -1,6 +1,6 @@
 # Use a tag (not latest)
 ARG GOLANG_VER=1.15
-FROM golang:$GOLANG_VER as builder
+FROM golang:$GOLANG_VER
 
 # Default labels & meta information
 LABEL \
