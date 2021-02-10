@@ -16,13 +16,13 @@
             <div class="text-center">
               <div class="iods pt-4">Solutions I Architect:</div>
               <p class="py-2">Application Stacks, Pipelines, Cloud Monitoring</p>
-              <div class="iods pt-3">Platforms &amp; Services:</div>
+              <div class="iods pt-3">Some focuses of mine:</div>
               <ul class="py-2">
+                <li>CI/CD (Bitbucket, Travis, Actions)</li>
                 <li>Google Cloud Platform</li>
-                <li>BitBucket Pipelines</li>
-                <li>Github Actions</li>
-                <li>Docker</li>
-                <li>Rancher</li>
+                <li>Rancher, Traefik</li>
+                <li>Pantheon</li>
+                <li>Azure</li>
               </ul>
             </div>
           </div>
@@ -31,17 +31,17 @@
             <div class="px-6 py-4 border-b">
               <div class="text-xl text-center iods font-bold">Software Development</div>
             </div>
-            <p class="text-base text-center text-gray-800 pt-4">I specialize in application written in PHP with a focus in Magento. Recently, I have become a huge fan of Go and building CLI tools.</p>
+            <p class="text-base text-center text-gray-800 pt-4">I specialize in applications written in PHP; focusing in Magento. Recently, I have become a HUGE fan of Go and building CLI tools.</p>
             <div class="text-center">
               <div class="iods pt-4">Languages I Speak:</div>
               <p class="py-2">PHP, JavaScript, Go, Python, Bash, SQL</p>
-              <div class="iods pt-3">Tools &amp; Environment:</div>
+              <div class="iods pt-3">Some tools of mine:</div>
               <ul class="py-2">
-                <li>JetBrains IDEs</li>
-                <li>Ubuntu 18.04</li>
-                <li>ohmyzsh</li>
-                <li>Github</li>
-                <li>Atom</li>
+                <li>PHPStorm, Webstorm, DataGrip</li>
+                <li>PyCharm, GoLand</li>
+                <li>ohmyzsh, iTerm</li>
+                <li>Postman</li>
+                <li>repl.it</li>
               </ul>
             </div>
           </div>
@@ -54,13 +54,13 @@
             <div class="text-center">
               <div class="iods pt-4">Philosophies I Support:</div>
               <p class="py-2">Mentorship, Community, Feedback</p>
-              <div class="iods pt-3">Roles &amp; Responsibilities:</div>
+              <div class="iods pt-3">Some practices I follow:</div>
               <ul class="py-2">
-                <li>Development Manager</li>
-                <li>Lead Developer</li>
-                <li>Educator</li>
-                <li>Mentor</li>
-                <li>Student</li>
+                <li>Commit early; commit often</li>
+                <li>Pair programming</li>
+                <li>Core reviews</li>
+                <li>Open Source</li>
+                <li>Mentorship</li>
               </ul>
             </div>
           </div>
