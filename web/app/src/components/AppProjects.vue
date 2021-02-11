@@ -56,6 +56,9 @@
 
   </section>
 
+  <!--
+    COLLABORATION CTA
+  -->
   <section class="container -mt-28">
     <div class="flex flex-col md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
       <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-400">
@@ -65,15 +68,18 @@
         </div>
       </div>
       <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
-        <form @submit.prevent="sendEmailC">
+        <Form @submit="send" id="cta">
           <div class="flex flex-col rounded overflow-hidden sm:flex-row">
-            <input class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" type="text" name="user_email" placeholder="Start a conversation...">
+            <Field type="email" name="user_email" id="user_email" class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" placeholder="Share your email..." />
             <button class="py-3 px-4 bg-gray-800 iods text-gray-100 hover:bg-gray-400">Let's Chat!</button>
           </div>
-        </form>
+        </Form>
       </div>
     </div>
   </section>
+  <!--
+    COLLABORATION CTA
+  -->
 
   <section class="container pt-10">
     <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Endorsements:</h2>
@@ -130,20 +136,47 @@
 
 
 
+
 <script>
 
-import emailjs from 'emailjs-com';
+import { Form, Field } from 'vee-validate';
 
 export default {
+
+  components: {
+    Form,
+    Field,
+  },
+
   methods: {
 
-    sendEmailC: (e) => {
-      emailjs.sendForm('service_vhw1qcu', 'template_dgpsrlc', e.target, 'user_0WfdVkJzFB4xuv6Iua1yf')
-          .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-          }, (error) => {
-            console.log('FAILED...', error);
-          });
+    post(path, params, method='post') {
+
+      const form = document.createElement('form');
+      form.method = method;
+      form.action = path;
+
+      for (const key in params) {
+
+          const hiddenField = document.createElement('input');
+          hiddenField.type = 'hidden';
+          hiddenField.name = key;
+          hiddenField.value = params[key];
+
+          form.appendChild(hiddenField);
+
+      }
+
+      document.body.appendChild(form);
+      form.submit();
+    },
+
+    send() {
+      const formData = document.forms.cta;
+      const formEmail = new FormData(formData);
+      const email = formEmail.get('user_email');
+
+      this.post('/sendMail', {name: "CTA", email: email, message: "None."})
     }
   }
 }

@@ -7,7 +7,7 @@
     <div class="container">
       <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Send me a message:</h2>
       <div class="w-full max-w-2xl mx-auto mb-8">
-        <form @submit.prevent="sendEmail">
+        <form @submit.prevent="sendEmail" id="contacts">
           <div class="flex mb-4 -mx-2">
             <div class="w-1/2 px-2">
               <input class="appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none" type="text" name="user_name" placeholder="Name">
@@ -38,18 +38,38 @@
 
 <script>
 
-import emailjs from 'emailjs-com';
-
 export default {
   methods: {
 
-    sendEmail: (e) => {
-      emailjs.sendForm('service_vhw1qcu', 'template_dgpsrlc', e.target, 'user_0WfdVkJzFB4xuv6Iua1yf')
-        .then((result) => {
-          console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-          console.log('FAILED...', error);
-        });
+    post(path, params, method='post') {
+
+      const form = document.createElement('form');
+      form.method = method;
+      form.action = path;
+
+      for (const key in params) {
+
+        const hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = key;
+        hiddenField.value = params[key];
+
+        form.appendChild(hiddenField);
+
+      }
+
+      document.body.appendChild(form);
+      form.submit();
+    },
+
+    sendEmail() {
+      const form = document.forms.contacts;
+      const formData = new FormData(form);
+      const name = formData.get('user_name');
+      const email = formData.get('user_email');
+      const message = formData.get('message');
+
+      this.post('/sendMail', {email: email, name: name, message: message})
     }
   }
 }
