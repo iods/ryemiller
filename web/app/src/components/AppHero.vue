@@ -2,7 +2,7 @@
   <!--
     HERO
   -->
-  <section id="hero" class="bg-gray-100 pt-28 pb-10 text-center">
+  <section id="hero" class="pt-28 pb-10 text-center">
 
     <div class="container">
       <div class="w-full max-w-3xl mx-auto">
@@ -12,7 +12,7 @@
           technologies and processes from a project's discovery to it's delivery, focusing on being agile not fragile. My goal is to move the web forward with each character
           considered, each pixel defined, every pipeline a success.</p>
         <div>
-          <a class="inline-block hover:underline pb-8 page-scroll" href="#projects">My vision is in the code »</a>
+          <a class="inline-block hover:underline pb-8 page-scroll text-gate" href="#profile">My vision is in the code »</a>
         </div>
       </div>
     </div>

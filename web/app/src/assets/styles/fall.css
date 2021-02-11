@@ -1,0 +1,31 @@
+
+
+#hero {
+    @apply bg-cultured;
+}
+
+.font-heading {
+    @apply text-gunmetal;
+}
+
+.no-scroll {
+    @apply block px-5 text-gate-dark;
+}
+
+.no-scroll:active,
+.no-scroll:hover {
+    @apply text-gate;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.page-scroll {
+    @apply block px-5 text-gate-dark;
+}
+
+.page-scroll:active,
+.page-scroll:hover {
+    @apply text-gate;
+    font-weight: normal;
+    text-decoration: underline;
+}
