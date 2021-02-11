@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    @apply text-gunmetal;
 }
 
 p {
@@ -18,12 +19,12 @@ p {
 }
 
 .btn {
-    @apply bg-gray-800 px-10 py-3 rounded duration-300 text-white;
+    @apply bg-gate-light px-10 py-3 rounded duration-300 text-gate-darker;
     font-family: 'Fira Code', monospace;
 }
 
 .btn:hover {
-    @apply bg-gray-500 text-white;
+    @apply bg-gate-dark text-white;
 }
 
 .sticky {
@@ -83,8 +84,9 @@ p {
     font-weight: bold;
 }
 
-
-
+.error-message {
+    @apply px-2 py-3 my-2 bg-red-300 text-red-800 rounded border border-red-600;
+}
 
 
 
@@ -102,6 +104,6 @@ p {
 }
 
 .package-name {
-    @apply text-gray-600 font-bold uppercase;
+    @apply text-gate-darker font-bold uppercase;
     font-family: 'Fira Code', monospace;
 }

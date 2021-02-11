@@ -2,14 +2,14 @@
   <!--
     OFFERINGS
   -->
-  <section id="offerings" class="py-14 bg-gray-100">
+  <section id="offerings" class="py-14 bg-cultured">
 
     <div class="container">
       <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Here are my offerings:</h2>
       <div class="flex flex-wrap justify-center md:justify-start lg:px-24">
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-50 border-t-8 border-gray-400">
+          <div class="pricing-box bg-cultured-light border-t-8 border-gate-lighter">
             <div class="mb-3">
               <h3 class="package-name">Basic</h3>
             </div>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-100 border-t-8 border-gray-600">
+          <div class="pricing-box bg-cultured-light border-t-8 border-gate-light">
             <div class="mb-3">
               <h3 class="package-name">Standard</h3>
             </div>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-          <div class="pricing-box bg-gray-50 border-t-8 border-gray-800">
+          <div class="pricing-box bg-cultured-light border-t-8 border-gate">
             <div class="mb-3">
               <h3 class="package-name">Premium</h3>
             </div>
