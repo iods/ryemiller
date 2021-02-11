@@ -31,10 +31,10 @@
                 <a class="page-scroll" href="#offerings">Offerings</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="/curriculum-vitae">CV</a>
+                <a class="no-scroll" href="/curriculum-vitae">CV</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="/health">Site Health</a>
+                <a class="no-scroll" href="/health">Site Health</a>
               </li>
             </ul>
           </div>

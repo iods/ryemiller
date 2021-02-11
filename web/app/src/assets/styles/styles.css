@@ -62,6 +62,15 @@ p {
 
 
 
+.no-scroll {
+    @apply block px-5 text-gray-800;
+}
+
+.no-scroll:active,
+.no-scroll:hover {
+    @apply text-gray-900;
+    font-weight: bold;
+}
 
 
 .page-scroll {

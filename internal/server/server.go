@@ -2,31 +2,48 @@ package server
 
 import (
 	"log"
-	"net/http"
-	"os"
 
-	"github.com/iods/ryemiller.io/internal/handler"
-	"github.com/julienschmidt/httprouter"
+	"github.com/gofiber/fiber/v2"
 )
 
-func Runs() {
-	r := httprouter.New()
-	r.GET("/", handler.Index)
-	r.GET("/contact", handler.Contact)
-	r.GET("/curriculum-vitae", handler.Cv)
-	r.GET("/cwd", handler.Cwd)
-	r.GET("/health", handler.Health)
-	r.GET("/home", handler.Index)
-	r.GET("/whoami", handler.Whoami)
-
-	port := os.Getenv("PORT")
-	if port != "8080" {
-		port = "8080"
-		log.Printf("Defaulting to port %s.\n", port)
-	}
-
-	if err := http.ListenAndServe(":" + port, r); err != nil {
-		log.Fatal(err)
-	}
+type Form struct {
+	Name string `json:"name" xml:"name" form:"name" query:"name"`
+	Email string `json:"email" xml:"email" form:"email" query:"email"`
+	Message string `json:"message" xml:"message" form:"message" query:"message"`
 }
 
+func Run() {
+
+	r := fiber.New()
+
+
+	r.Static("/", "../../web/app/dist")
+
+	r.Get("/", func(c *fiber.Ctx) error {
+		return c.SendFile("../../web/app/dist/index.html")
+	})
+
+	r.Get("/curriculum-vitae", func(c *fiber.Ctx) error {
+		return c.SendString("CV page (not a part of the Vue app, Go page)")
+	})
+
+	r.Get("/health", func(c *fiber.Ctx) error {
+		return c.SendString("Site Reliability Dashboard (not a part of the Vue app, Go page)")
+	})
+
+	r.Post("/sendMail", func(c *fiber.Ctx) error {
+		f := new(Form)
+
+		if err := c.BodyParser(f); err != nil {
+			log.Println(err)
+			c.Status(500).Send([]byte("failed"))
+			return err
+		}
+
+		email(f.Name, f.Email, f.Message)
+
+		return c.Send([]byte(f.Email))
+	})
+
+	log.Fatal(r.Listen(":8080"))
+}

@@ -1,5 +1,6 @@
 /.git/
 /.idea/
+/web/app/node_modules/
 .dockerignore
 .gitignore
 docker-compose.yml

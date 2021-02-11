@@ -56,6 +56,9 @@
 
   </section>
 
+  <!--
+    COLLABORATION CTA
+  -->
   <section class="container -mt-28">
     <div class="flex flex-col md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
       <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-400">
@@ -65,15 +68,18 @@
         </div>
       </div>
       <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
-        <form>
+        <Form @submit="send" id="cta">
           <div class="flex flex-col rounded overflow-hidden sm:flex-row">
-            <input class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" type="text" name="email" placeholder="Start a conversation...">
+            <Field type="email" name="user_email" id="user_email" class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" placeholder="Share your email..." />
             <button class="py-3 px-4 bg-gray-800 iods text-gray-100 hover:bg-gray-400">Let's Chat!</button>
           </div>
-        </form>
+        </Form>
       </div>
     </div>
   </section>
+  <!--
+    COLLABORATION CTA
+  -->
 
   <section class="container pt-10">
     <h2 class="text-3xl leading-tight mb-6 font-heading iods text-center">Endorsements:</h2>
@@ -109,12 +115,13 @@
             </div>
             <div class="w-full mb-10">
               <div class="text-5xl text-gray-500 text-left leading-tight h-3">“</div>
-              <p class="text-sm text-gray-600 text-center px-5">We never expected Rye to have wings or ride the bull like he did when he came to Red Bull. Whether it was our energy drink or his intelligence, that young man vitalizes the body and mind.</p>
+              <p class="text-sm text-gray-600 text-center px-5">Rye served as our Webmaster and IT coordinator during my time at Optelec U.S. He was instrumental in the development, look, layout, and usability of our new Ecommerce store and company website.
+              He was a tremendously hard worker, took a leadership role in implementation, and was dedicated to meeting deadlines. Rye was truly a pleasure to work with and I know he will be successful in all future endeavours.</p>
               <div class="text-4xl text-gray-800 text-right leading-tight h-3 -mt-3">”</div>
             </div>
             <div class="w-full">
-              <p class="text-md iods text-center">Creed Bratton</p>
-              <p class="text-xs iods text-center">CEO of Red Bull</p>
+              <p class="text-md iods text-center">Ryan Morse</p>
+              <p class="text-xs iods text-center">Sr. Account Manager at GumGum Sports</p>
             </div>
           </div>
         </div>
@@ -126,3 +133,52 @@
     PROJECTS
   -->
 </template>
+
+
+
+
+<script>
+
+import { Form, Field } from 'vee-validate';
+
+export default {
+
+  components: {
+    Form,
+    Field,
+  },
+
+  methods: {
+
+    post(path, params, method='post') {
+
+      const form = document.createElement('form');
+      form.method = method;
+      form.action = path;
+
+      for (const key in params) {
+
+          const hiddenField = document.createElement('input');
+          hiddenField.type = 'hidden';
+          hiddenField.name = key;
+          hiddenField.value = params[key];
+
+          form.appendChild(hiddenField);
+
+      }
+
+      document.body.appendChild(form);
+      form.submit();
+    },
+
+    send() {
+      const formData = document.forms.cta;
+      const formEmail = new FormData(formData);
+      const email = formEmail.get('user_email');
+
+      this.post('/sendMail', {name: "CTA", email: email, message: "None."})
+    }
+  }
+}
+
+</script>
