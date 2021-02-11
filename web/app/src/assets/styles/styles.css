@@ -83,8 +83,9 @@ p {
     font-weight: bold;
 }
 
-
-
+.error-message {
+    @apply px-2 py-3 my-2 bg-red-300 text-red-800 rounded border border-red-600;
+}
 
 
 

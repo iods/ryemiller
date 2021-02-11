@@ -60,7 +60,7 @@
     COLLABORATION CTA
   -->
   <section class="container -mt-28">
-    <div class="flex flex-col md:h-56 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
+    <div class="flex flex-col md:h-48 bg-white rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
       <div class="md:flex items-center justify-center md:w-1/2 md:bg-gray-400">
         <div class="py-6 px-8 md:py-0">
           <h2 class="text-gray-700 text-2xl md:text-white iods">Interested in collaborating?</h2>
@@ -70,9 +70,12 @@
       <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
         <Form @submit="send" id="cta">
           <div class="flex flex-col rounded overflow-hidden sm:flex-row">
-            <Field type="email" name="user_email" id="user_email" class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" placeholder="Share your email..." />
+            <Field type="email" name="user_email" id="user_email" :rules="validateEmail" class="appearance-none py-3 px-4 bg-gray-50 text-gray-700 border-gray-200 border focus:outline-none placeholder-gray-500 focus:border-gray-500" placeholder="Share your email..." />
             <button class="py-3 px-4 bg-gray-800 iods text-gray-100 hover:bg-gray-400">Let's Chat!</button>
           </div>
+          <ErrorMessage as="div" name="user_email" v-slot="{ message }">
+            <p class="error-message">{{ message }}</p>
+          </ErrorMessage>
         </Form>
       </div>
     </div>
@@ -139,16 +142,29 @@
 
 <script>
 
-import { Form, Field } from 'vee-validate';
+import { Form, Field, ErrorMessage } from 'vee-validate';
 
 export default {
 
   components: {
+    ErrorMessage,
     Form,
     Field,
   },
 
   methods: {
+
+    validateEmail(value) {
+      if (!value) {
+        return 'This field is required.';
+      }
+
+      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+        return 'This field must be a valid email';
+      }
+
+      return true;
+    },
 
     post(path, params, method='post') {
 
@@ -171,7 +187,8 @@ export default {
       form.submit();
     },
 
-    send() {
+    send(values) {
+      alert(JSON.stringify(values, null, 2));
       const formData = document.forms.cta;
       const formEmail = new FormData(formData);
       const email = formEmail.get('user_email');
